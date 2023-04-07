@@ -1,0 +1,41 @@
+<style>
+   /*
+   CSS Combinator selector
+   <!-- disendent operator this will apply given class to all of it child --> */
+    div p {
+        color:red;
+    }
+     /* <!-- > operator this will apply given class to direct child --> */
+     div > span {
+        color:red;
+    }
+    /* <!-- adjecent sibbling operator this will apply given class to direct child --> */
+    h3 + p {
+        color:green;
+    }
+    /* <!-- ~ operator this will apply given class to all tag which come after it --> */
+    h3 ~ p {
+        color:green;
+    }
+
+</style>
+<div>
+    <h3>this is my h3</h3>
+    <p>
+        This is my +
+    </p>
+    <p>
+        this is second p
+    </p>
+    <span>
+        it is direct child of div
+        
+    </span>
+    <section>
+        <span>Not a direct child of div</span>
+    </section>
+    <h3>
+        This is my h3 for ~
+    </h3>
+    <p> This is my p which style added from ~</p>
+</div>
